@@ -19,6 +19,10 @@ public:
 	bool		enabled;				// set this to false to temporarily disable all events
 	bool		verbose;
 
+    static bool doCoordTransformation;  // Added in from smallfly's fork for ofxGemcutter
+    static ofRectangle coordSystemRect; // " "
+    ofVec2f screenToCanvas(ofVec2f vec);// " "
+
 	ofxMSAInteractiveObject();			// constructor
 	virtual ~ofxMSAInteractiveObject();	// destructor
 
